@@ -1,0 +1,48 @@
+package javaapplication38;
+
+public class JavaApplication38 {
+
+    private static Persona Persona;
+  
+    private String nombre;
+private String apellido; 
+private int edad;
+ 
+    public JavaApplication38 (String nombre, String apellido, int edad){
+     this.nombre = nombre;   
+        this.apellido = apellido;
+        this.edad = edad;
+        
+    }    
+    public String getNombre (){
+        return this.nombre;    
+    }
+    public void setNombre (){
+    this.nombre = nombre;
+    }
+     public String getApellido (){
+        return this.apellido;    
+    }
+    public void setApellido (){
+    this.apellido = apellido;
+    }
+      public int getedad (){
+        return this.edad;    
+    }
+    public void setedad (){
+    this.edad = edad;
+    }
+      public void Caminar (){
+   System.out.println("ando caminando ");
+    }
+    public String Dormir(){
+  return "estoy dormidote";  
+   }
+   
+    public static void main(String[] args) {
+    Persona = new Persona ("Mora", "Uli", 20);
+    
+    
+    }
+    
+}
